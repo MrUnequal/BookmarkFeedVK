@@ -1,1 +1,1 @@
-[ref:vk-android-sdk, picasso, circleimageview, support libraries used used]
+[ref:vk-android-sdk, picasso, circleimageview, support libraries used used    ]
