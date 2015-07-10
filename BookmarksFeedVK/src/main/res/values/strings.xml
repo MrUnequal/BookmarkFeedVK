@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bookmarks Feed</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="hello_world">hello world</string>
+    <string name="feed_users">Users Feed</string>
+    <string name="feed_bookmarks">Bookmarks Feed</string>
+    <string name="feed">Feed</string>
+    <string name="manage_bookmarks">Manage Bookmarks</string>
+    <string name="removed">removed from bookmarks</string>
+    <string name="undo">Undo</string>
+    <string name="seconds_ago">seconds ago</string>
+    <string name="minutes_ago">minuter ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="at">at</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="hour_ago">hour ago</string>
+
+    <string-array name="bookmarks_tabs_names">
+        <item>Users</item>
+        <item>Bookmarks</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>

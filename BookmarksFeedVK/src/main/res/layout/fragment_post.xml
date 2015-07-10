@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/post_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_holder_user_photo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <TextView
+            android:id="@+id/post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:text="Pavel Durovich"
+            android:layout_toRightOf="@id/post_avatar"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/grey600"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:id="@+id/post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="5 minutes ago"
+            android:layout_below="@id/post_name"
+            android:layout_toRightOf="@id/post_avatar"
+            android:textColor="@color/grey600"
+            android:textSize="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert"
+            android:id="@+id/post_3dots"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/post_contentFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content 1"
+        android:gravity="center_vertical"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_messenger_grey600"
+            android:id="@+id/post_commentsCountIcon"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/post_commentsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_toEndOf="@id/post_commentsCountIcon"
+            android:layout_toRightOf="@id/post_commentsCountIcon"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/post_likesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favorite_grey600"
+            android:id="@+id/post_likesCountIcon"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/post_likesCount"
+            />
+
+        <TextView
+            android:id="@+id/post_sharesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/post_likesCountIcon"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_grey600"
+            android:id="@+id/post_sharesCountIcon"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/post_sharesCount"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainerComments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/post_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

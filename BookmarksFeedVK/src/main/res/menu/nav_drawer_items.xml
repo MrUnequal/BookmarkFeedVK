@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/navItemFeed"
+            android:icon="@drawable/ic_holder_user_photo"
+            android:title="@string/feed"/>
+        <item
+            android:id="@+id/navItemFeedUsers"
+            android:icon="@drawable/ic_holder_user_photo"
+            android:title="@string/feed_users"/>
+        <item
+            android:id="@+id/navItemFeedBookmarks"
+            android:icon="@drawable/ic_holder_user_photo"
+            android:title="@string/feed_bookmarks"/>
+
+        <item
+            android:id="@+id/navItemManageBookmarks"
+            android:icon="@drawable/ic_holder_user_photo"
+            android:title="@string/manage_bookmarks"/>
+    </group>
+
+</menu>

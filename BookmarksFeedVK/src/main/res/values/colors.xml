@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drawer_background">#313741</color>
+
+    <item name="blue" type="color">#FF33B5E5</item>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="grey600">#546e7a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary_blue">#517fba</color>
+
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/header"
+    android:layout_height="72dp">
+
+
+
+    <ImageView
+        android:id="@+id/avatarBackground"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_holder_user_photo"
+        android:layout_height="wrap_content"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_holder_user_photo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        app:border_width="0dp"
+        app:border_color="#FF000000"/>
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/avatar"
+        android:text="name"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:gravity="center_vertical"
+        android:paddingRight="40dp"/>
+
+    <ImageView
+        android:id="@+id/icSettings"
+        android:src="@drawable/ic_more_vert"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
